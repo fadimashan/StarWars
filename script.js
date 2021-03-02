@@ -69,3 +69,12 @@ function withoutSearch() {
     }
 
 }
+
+var input = document.querySelector("#input-name");
+input.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        // document.getElementById("button-addon1").click();
+        document.querySelector("#btn-search").click();
+    }
+});
